@@ -21,5 +21,8 @@ yarn-debug.log*
 yarn-error.log*
 
 ../src/keys.js
+./src/keys.js
+.keys.js
+keys.js
 /src/testing.js
 
