@@ -53,18 +53,17 @@ a:active {
 .upperLanding{
   width: 100%;
   position: relative;
-   background-image: url('./images/a2.jpg');
+   background-image: url('./images/MikoTV_banner.png');
 }
 
-@media only screen and (min-width : 768px) {
+/*@media only screen and (min-width : 768px) {
 .upperLanding{
   background-image: none;
 }
 
-}
+}*/
 .contentsUpperLanding{
-  width: 90%;
-  height: 90%;
+
   margin: 0 auto;
   position: relative;
   padding: 10px;
@@ -76,3 +75,5 @@ a:active {
 footer{
 text-align: center;
 }
+
+videoList

@@ -63,9 +63,10 @@ console.log(API_KEY)
      <div className="upperLanding">
       <div className=" contentsUpperLanding">
       <SearchBar className="col-11" onSearchTermChange={videoSearch}/>
+            </div>
+      </div>
       <VideoDetail video= {this.state.selectedVideo}/>
-      </div>
-      </div>
+
       <div className="container">
       <AlertContainer ref={a => this.msg = a} {...this.alertOptions} />
       <VideoList
