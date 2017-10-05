@@ -1,6 +1,6 @@
 ## MikoTV
 
-**[Play The Game Here](https://mikobrandini.github.io/MikoTV/).** <br>
+**[Visit Website Here](https://mikobrandini.github.io/MikoTV/).** <br>
 **Developed by [Miko Brandini](https://mikobrandini.github.io/portfolio/).**
 
 
