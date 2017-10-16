@@ -56,7 +56,7 @@ const API_KEY = keys.youtubeApiKey;
 
   render(){
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
-
+    console.log(this.state.selectedVideo)
     return (
      <div>
      <div className="upperLanding">
@@ -71,9 +71,6 @@ const API_KEY = keys.youtubeApiKey;
       <VideoList
         onVideoSelect={selectedVideo => this.setState({selectedVideo})}
         videos={this.state.videos}
-      />
-      <PricingTables
-        onPlanPickingButtonClick={this.showAlert}
       />
     </div>
     </div>

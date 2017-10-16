@@ -1,13 +1,6 @@
 import React, {Component } from 'react';
 import {Form, FormGroup, FormControl} from 'react-bootstrap';
 
-
-
-//la jeno estas funkcia komponanto
-// const SearchBar = () => {
-// return <input type="text"/>;
-// }
-
 class SearchBar extends Component{
   constructor(props){
     super(props);
