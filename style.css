@@ -30,6 +30,7 @@ a:active {
   width: 100%;
 }
 
+
 .video-item img{
 /*  max-width: 64px;
   min-width: 100%;*/
@@ -76,7 +77,8 @@ a:active {
 
   margin: 0 auto;
   position: relative;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom:10px;
 }
 .card{
   margin-bottom: 10px;
