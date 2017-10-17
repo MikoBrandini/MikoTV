@@ -18,10 +18,12 @@ a:hover {
 a:active {
     color: blue;
 }
-
+.searchBarForm{
+  height: 150px;
+}
 .search-bar{
-  margin: 20px;
   text-align: center;
+  opacity: .9;
 }
 
 .search-bar input{
@@ -53,15 +55,23 @@ a:active {
 .upperLanding{
   width: 100%;
   position: relative;
-   background-image: url('./images/MikoTV_banner.png');
+   background-image: url('./images/logo.png');
+   background-position: 50% 30%;
+   background-repeat: no-repeat;
 }
 
-/*@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) {
 .upperLanding{
-  background-image: none;
+  width: 100%;
+   background-image: url('./images/a3.jpg');
+   background-size: 100% 100%;
 }
 
-}*/
+.searchBarForm{
+  height: 100%;
+}
+
+}
 .contentsUpperLanding{
 
   margin: 0 auto;
