@@ -1,7 +1,7 @@
 
 import _ from 'lodash';
-import PricingTables from './pricing_tables';
 import React, {Component } from 'react';
+import LoadingContainer from './loading_container';
 import AlertContainer from 'react-alert';
 import SearchBar from './search_bar';
 import VideoList from './video_list';
@@ -17,7 +17,8 @@ const API_KEY = keys.youtubeApiKey;
 
       this.state = {
         videos: [],
-        selectedVideo: null
+        selectedVideo: null,
+        loading: true
       };
 
       this.videoSearch('vaporwave 80s')
@@ -42,7 +43,6 @@ const API_KEY = keys.youtubeApiKey;
 
 
     videoSearch(term){
-
       YTSearch({key: API_KEY, term: term, max: '1-50'},
         (data) => {
 
@@ -51,12 +51,28 @@ const API_KEY = keys.youtubeApiKey;
           selectedVideo: data[0]
         })
         });
-
     }
 
+  componentWillMount(){
+          setTimeout(()=>{
+              this.setState({loading:false})}, 1500
+              )
+
+}
+
+
+  //life cycle hook will change loading into false after 1500 seconds
+  // loading container is default container
+  // if selectedvideo has loaded, normal homepage will render
+  //else error page will render
+
   render(){
+    if(this.state.loading===true){
+
+      return(<LoadingContainer/>
+        )
+    }else{
     const videoSearch = _.debounce((term) => {this.videoSearch(term)}, 300);
-    console.log(this.state.selectedVideo)
     return (
      <div>
      <div className="upperLanding">
@@ -76,6 +92,7 @@ const API_KEY = keys.youtubeApiKey;
     </div>
       )
   }
+}
 
 }
 
