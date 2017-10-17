@@ -6,6 +6,7 @@ class SearchBar extends Component{
     super(props);
 
     this.state = { term: ''};
+
   }
   render(){
     return(
@@ -17,6 +18,7 @@ class SearchBar extends Component{
           placeholder="Miko TV: Search Here"
           value={this.state.term}
           onChange={(event) => this.onInputChange(event.target.value)}
+          onKeyPress={this.props.onKeyPress}
         />
       </div>
       </FormGroup>
@@ -28,6 +30,6 @@ class SearchBar extends Component{
     this.setState({term});
     this.props.onSearchTermChange(term);
   }
-  }
+}
 
 export default SearchBar;
