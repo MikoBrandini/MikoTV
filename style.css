@@ -76,4 +76,89 @@ footer{
 text-align: center;
 }
 
-videoList
+
+
+
+
+.loadingContainer{
+  background-color: #531F67;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+}
+#loading-center{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  }
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+
+}
+.object{
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  border-left: 5px dashed #F087E9;
+  border-right: 5px dashed #F087E9;
+  border-top: 5px dashed transparent;
+  border-bottom: 5px dashed transparent;
+  animation: animate 2s infinite;
+  }
+
+#object_one{
+  left: 75px;
+  top: 75px;
+  width: 50px;
+  height: 50px;
+  }
+
+#object_two{
+  left: 65px;
+  top: 65px;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0.1s;
+  }
+
+#object_three{
+  left: 55px;
+  top: 55px;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0.2s;
+  }
+#object_four{
+  left: 45px;
+  top: 45px;
+  width: 110px;
+  height: 110px;
+  animation-delay: 0.3s;
+
+  }
+
+@keyframes animate {
+
+50% {
+
+    transform: rotate(180deg);
+  }
+
+100% {
+    transform: rotate(0deg);
+  }
+
+
+}
+
+
+
+
