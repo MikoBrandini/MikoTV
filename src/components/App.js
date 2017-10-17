@@ -42,7 +42,7 @@ class App extends Component {
 
       if (e.charCode === 13) {
         e.preventDefault();
-      }
+        }
           }
 
     componentWillMount() {
@@ -50,7 +50,7 @@ class App extends Component {
             this.setState({
                 loading: false
             })
-        }, 100)
+        }, 2000)
 
     }
 

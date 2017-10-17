@@ -10,7 +10,7 @@ class SearchBar extends Component{
   }
   render(){
     return(
-      <Form horizontal className="searchBarForm">
+      <Form horizontal className="searchBarForm ">
       <FormGroup>
       <div className="search-bar">
         <FormControl
